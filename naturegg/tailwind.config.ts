@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'naturegg': '#ff385c',
+        'naturegg-dark': "#d50027"
       },
     },
   },
