@@ -4,8 +4,8 @@ const SearchFilters = () => {
             <div className="hidden lg:block">
                 <div className="flex flex-how items-center justify-between">
                     <div className="cursor-pointer w-[250px] h-[48px] lg:h-[64px] px-8 flex flex-col justify-center rounded-full hover:bg-gray-100">
-                        <p className="text-xs font-semibold">Where</p>
-                        <p className="text-sm">Wanted location</p>
+                        <p className="text-xs font-semibold">Onde</p>
+                        <p className="text-sm">Local Desejado</p>
                     </div>
 
                     <div className="cursor-pointer h-[48px] lg:h-[64px] px-8 flex flex-col justify-center rounded-full hover:bg-gray-100">
@@ -19,8 +19,8 @@ const SearchFilters = () => {
                     </div>
 
                     <div className="cursor-pointer h-[48px] lg:h-[64px] px-8 flex flex-col justify-center rounded-full hover:bg-gray-100">
-                        <p className="text-xs font-semibold">Who</p>
-                        <p className="text-sm">Add guests</p>
+                        <p className="text-xs font-semibold">Dias</p>
+                        <p className="text-sm">Add dias</p>
                     </div>
                 </div>
             </div>

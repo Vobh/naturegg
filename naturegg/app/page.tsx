@@ -1,11 +1,9 @@
-import Image from "next/image";
+import Categories from "./components/Categories";
 
 export default function Home() {
   return (
-    <main className="">
-      Naturegg System
-
-      <h2 className="text-naturegg-dark">natureggae dark</h2>
+    <main className="max-w[1500px] mx-auto px-6">
+      <Categories />
     </main>
     
   );
