@@ -2,8 +2,12 @@
 
 import { useEffect, useState } from "react";
 import MenuLink from "./MenuLink";
+import useLogin from "@/app/hooks/useLogin";
+import useSignup from "@/app/hooks/useSignup";
 
 const UserNav = () => {
+    const login = useLogin();
+    const signup = useSignup();
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -25,12 +29,19 @@ const UserNav = () => {
                 <div className="w-[220px] absolute top-[60px] right-0 bg-white border rounded-xl shadow-md flex flex-col cursor-pointer">
                     <MenuLink 
                         label="👤 Log in"
-                        onClick={() => console.log('Click')}
+                        onClick={() => {
+                            setIsOpen(false);
+                            login.open()
+                        }}
                     />
 
                     <MenuLink 
                         label="👥 Sign up"
-                        onClick={() => console.log('Click')}
+                        onClick={() => {
+
+                            setIsOpen(false);
+                            signup.open()
+                        }}
                     />
                 </div>
             )}
